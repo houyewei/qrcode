@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">二維碼</string>
+    <string name="title_activity_result">二維碼</string>
+    <string name="next">下一步</string>
+    <string name="title_activity_main2">二維碼</string>
+    <string name="action_search">檢索</string>
+</resources>
