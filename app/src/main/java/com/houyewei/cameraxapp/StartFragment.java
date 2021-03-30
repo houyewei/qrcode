@@ -20,7 +20,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class StartFragment extends Fragment {
-    public static final String ARG_OBJECT = "Object";
     private RecyclerView recyclerView;
     private TextView textView;
     private BarcodeViewModel viewModel;
@@ -50,14 +49,12 @@ public class StartFragment extends Fragment {
             }
         });
 
-        buttonView = view.findViewById(R.id.button);
-
-        textView = view.findViewById(R.id.textView2);
+        buttonView = view.findViewById(R.id.copy);
 
         buttonView.setOnClickListener(view1 -> {
             ClipboardManager clipboard = (ClipboardManager)
                     getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
-            ClipData clip = ClipData.newPlainText("text", textView.getText());
+            ClipData clip = ClipData.newPlainText("text", "hello, world");
 
             clipboard.setPrimaryClip(clip);
         });

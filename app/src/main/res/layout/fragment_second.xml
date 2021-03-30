@@ -16,7 +16,6 @@
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="72dp"
-        app:layout_anchor="@+id/include"
         app:layout_anchorGravity="bottom|center"
         app:layout_constraintBottom_toBottomOf="@+id/pager"
         app:layout_constraintEnd_toEndOf="parent"

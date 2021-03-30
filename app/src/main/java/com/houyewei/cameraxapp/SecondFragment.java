@@ -49,16 +49,14 @@ public class SecondFragment extends Fragment {
             }
         });
 
-        buttonView = view.findViewById(R.id.button);
-
-        textView = view.findViewById(R.id.textView2);
+        buttonView = view.findViewById(R.id.copy);
 
         buttonView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ClipboardManager clipboard = (ClipboardManager)
                         getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
-                ClipData clip = ClipData.newPlainText("text", textView.getText());
+                ClipData clip = ClipData.newPlainText("text", "Hello, World");
 
                 clipboard.setPrimaryClip(clip);
             }
