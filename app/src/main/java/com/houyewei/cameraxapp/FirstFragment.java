@@ -48,7 +48,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-
+@androidx.camera.core.ExperimentalGetImage
 public class FirstFragment extends Fragment {
 
     private ImageCapture imageCapture;
