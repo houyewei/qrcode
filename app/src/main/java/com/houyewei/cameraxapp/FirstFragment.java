@@ -155,7 +155,7 @@ public class FirstFragment extends Fragment {
 
         // Connect the preview use case to the previewView
         preview.setSurfaceProvider(
-                previewView.createSurfaceProvider());
+                previewView.getSurfaceProvider());
 
         ImageAnalysis imageAnalysis =
                 new ImageAnalysis.Builder()
