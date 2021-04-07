@@ -6,8 +6,6 @@
     <string name="title_activity_main2">二维码</string>
     <string name="action_search">搜索</string>
     <string name="setting">设置</string>
-    <string name="first_fragment_label">第一个Frag</string>
-    <string name="second_fragment_label">第二个Frag</string>
     <string name="previous">扫描</string>
     <string name="hello_first_fragment">你好第一个Fragment</string>
     <string name="hello_second_fragment">你好第二个Fragment</string>
