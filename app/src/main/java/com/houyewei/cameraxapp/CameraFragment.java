@@ -72,7 +72,7 @@ public class CameraFragment extends Fragment {
             Bundle savedInstanceState
     ) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.camera, container, false);
+        return inflater.inflate(R.layout.fragment_camera, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -109,6 +109,8 @@ public class CameraFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         MainActivity activity = (MainActivity)getActivity();
         viewModel = activity.viewModel;
+
+
     }
 
     private void takePhoto() {
@@ -289,7 +291,7 @@ public class CameraFragment extends Fragment {
             isNavgating = true;
             NavController navController = NavHostFragment.findNavController(CameraFragment.this);
             Log.d("TAG", "id" + navController.getCurrentDestination().getId());
-            navController.navigate(R.id.action_FirstFragment_to_SecondFragment);
+            navController.navigate(R.id.action_CameraFragment_to_DetailFragment);
         }
     }
 

@@ -24,7 +24,7 @@ public class TabsFragment extends Fragment {
             Bundle savedInstanceState
     ) {
         // Inflate the layout for this fragment
-        View root = inflater.inflate(R.layout.fragment_second, container, false);
+        View root = inflater.inflate(R.layout.fragment_tabs, container, false);
 //        recyclerView = root.findViewById(R.id.recycler_dashboard);
 //        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
